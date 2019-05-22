@@ -10,7 +10,8 @@
     "build": "rollup -c",
     "build-example": "webpack --mode production",
     "deploy": "webpack --mode production && github-pages-deploy",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "prepare": "npm run build"
   },
   "github-pages-deploy": {
     "src": "example"
