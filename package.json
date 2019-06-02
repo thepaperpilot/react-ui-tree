@@ -25,9 +25,9 @@
     "react-component",
     "tree"
   ],
-   "files": [
-     "index.d.ts",
-     "dist"
+  "files": [
+    "index.d.ts",
+    "dist"
   ],
   "author": "Wang Zuo",
   "license": "MIT",
