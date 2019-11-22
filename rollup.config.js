@@ -5,7 +5,7 @@ import pkg from './package.json';
 
 const input = './lib/index.js';
 
-const external = id => !id.startsWith('.') && !id.startsWith('/');
+const external = id => (!id.startsWith('./') && !id.includes('react-ui-tree'));
 
 export default [
   {
