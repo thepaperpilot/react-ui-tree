@@ -2,10 +2,9 @@ import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
 import pkg from './package.json';
+import rollupExternalModules from 'rollup-external-modules';
 
 const input = './lib/index.js';
-
-const external = id => !id.startsWith('.') && !id.startsWith('/');
 
 export default [
   {
@@ -14,7 +13,7 @@ export default [
       file: pkg.main,
       format: 'cjs'
     },
-    external,
+    external: rollupExternalModules,
     plugins: [
       babel({
         runtimeHelpers: true,
@@ -31,7 +30,7 @@ export default [
       file: pkg.module,
       format: 'esm'
     },
-    external,
+    external: rollupExternalModules,
     plugins: [
       babel({
         runtimeHelpers: true,

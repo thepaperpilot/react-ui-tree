@@ -67,6 +67,7 @@
     "react-test-renderer": "^16.6.0",
     "regenerator-runtime": "^0.12.1",
     "rollup": "^0.66.6",
+    "rollup-external-modules": "^2.0.0",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^3.4.0",
